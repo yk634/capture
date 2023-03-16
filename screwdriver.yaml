@@ -1,0 +1,16 @@
+shared:
+  image: centos:centos7
+
+jobs:
+  job1:
+    requires: [ ~commit, ~pr ]
+    steps:
+      - echo: echo hoge
+  job2:
+    requires: [ job1 ]
+    steps:
+      - echo: echo hoge
+  job3:
+    requires: [ job1 ]
+    steps:
+      - echo: sleep 60
