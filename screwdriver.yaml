@@ -11,6 +11,6 @@ jobs:
     steps:
       - echo: echo hoge
   job3:
-    requires: [ job1 ]
+    requires: [ job2 ]
     steps:
       - echo: sleep 60
