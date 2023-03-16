@@ -5,12 +5,8 @@ jobs:
   job1:
     requires: [ ~commit, ~pr ]
     steps:
-      - echo: echo hoge
+      - echo: sleep 60
   job2:
     requires: [ job1 ]
     steps:
       - echo: echo hoge
-  job3:
-    requires: [ job2 ]
-    steps:
-      - echo: sleep 60
