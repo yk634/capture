@@ -10,3 +10,6 @@ jobs:
     requires: [ job1 ]
     steps:
       - echo: echo hoge
+  publish:
+    steps:
+      - echo: sleep 60
