@@ -5,11 +5,4 @@ jobs:
   job1:
     requires: [ ~commit, ~pr ]
     steps:
-      - echo: sleep 60
-  job2:
-    requires: [ job1 ]
-    steps:
-      - echo: echo hoge
-  publish:
-    steps:
-      - echo: sleep 60
+      - echo: echo $CONTAINER_MEMORY_LIMIT
