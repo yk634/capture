@@ -5,4 +5,4 @@ jobs:
   job1:
     requires: [ ~commit, ~pr ]
     steps:
-      - echo: echo $CONTAINER_MEMORY_LIMIT
+      - echo: echo $CONTAINER_CPU_LIMIT
